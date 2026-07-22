@@ -1,0 +1,24 @@
+[
+  {
+    "id": "IX-9831-AZ",
+    "usuarioId": "IX-9831-AZ",
+    "nombreCompleto": "Alberto Zepeda",
+    "correo": "alberto.zepeda@impactx.com",
+    "nombreUsuario": "albert_zepeda",
+    "planId": "plan-pro",
+    "tipoUsuario": "Conductor",
+    "telefono": "+525512345678",
+    "preferencias": {
+      "notificacionesPush": true,
+      "modoOscuro": true,
+      "deteccionAutomaticaSos": true,
+      "sensibilidadAcelerometro": "Alta"
+    },
+    "perfilMedico": {
+      "tipoSangre": "O+",
+      "alergias": ["Penicilina"],
+      "contactoPoliza": "Seguros Monterrey MX #98123"
+    },
+    "creadoEn": "2026-07-15T00:00:00Z"
+  }
+]

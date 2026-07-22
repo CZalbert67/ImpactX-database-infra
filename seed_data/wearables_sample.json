@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wearable-gw6-001",
+    "usuarioId": "IX-9831-AZ",
+    "nombreDispositivo": "Galaxy Watch 6",
+    "direccionMac": "B8:85:84:7F:D8:12",
+    "estadoConexion": "Conectado",
+    "bateriaPorcentaje": 98,
+    "frecuenciaCardiacaActual": 78,
+    "ultimaSincronizacion": "2026-07-21T18:00:00Z"
+  }
+]

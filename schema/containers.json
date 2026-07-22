@@ -1,0 +1,108 @@
+{
+  "database": "ImpactX-Data",
+  "description": "Especificación oficial de contenedores Azure Cosmos DB NoSQL para ImpactX",
+  "containers": [
+    {
+      "id": "Usuarios",
+      "partitionKeyPath": "/id",
+      "defaultTimeToLive": -1,
+      "description": "Perfiles de usuario principales, preferencias, datos de conductor y datos médicos."
+    },
+    {
+      "id": "RefreshTokens",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": 604800,
+      "description": "Tokens de refresco JWT para mantener sesiones activas (expira en 7 días)."
+    },
+    {
+      "id": "PasswordResetTokens",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": 3600,
+      "description": "Tokens para recuperación de contraseña (expira en 1 hora)."
+    },
+    {
+      "id": "Planes",
+      "partitionKeyPath": "/id",
+      "defaultTimeToLive": -1,
+      "description": "Catálogo de planes de suscripción (Básico, Pro, Familiar)."
+    },
+    {
+      "id": "Suscripciones",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": -1,
+      "description": "Suscripciones activas e historial de planes asignados por usuario."
+    },
+    {
+      "id": "Pagos",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": -1,
+      "description": "Registro transaccional de pagos y comprobantes generados."
+    },
+    {
+      "id": "Monitores",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": -1,
+      "description": "Monitores vinculados y red de supervisión del usuario."
+    },
+    {
+      "id": "ContactosEmergencia",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": -1,
+      "description": "Directorio de contactos de emergencia para notificaciones SOS."
+    },
+    {
+      "id": "Rutas",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": -1,
+      "description": "Rutas frecuentes y trayectos habituales configurados por el usuario."
+    },
+    {
+      "id": "Viajes",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": 7776000,
+      "description": "Registro de viajes iniciados, pausados y completados (retención 90 días)."
+    },
+    {
+      "id": "TelemetriaViaje",
+      "partitionKeyPath": "/viajeId",
+      "defaultTimeToLive": 7776000,
+      "description": "Lecturas físicas de sensores kinéticos y acelerómetro por viaje (retención 90 días)."
+    },
+    {
+      "id": "Alertas",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": 31536000,
+      "description": "Alertas por impacto, choques detectados y eventos SOS (retención 1 año)."
+    },
+    {
+      "id": "Notificaciones",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": 2592000,
+      "description": "Bandeja de notificaciones push e in-app (retención 30 días)."
+    },
+    {
+      "id": "Wearables",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": -1,
+      "description": "Dispositivos Smartwatch/BLE emparejados y diagnóstico de sensores."
+    },
+    {
+      "id": "AppInvites",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": 2592000,
+      "description": "Invitaciones pendientes enviadas a familiares/monitores (retención 30 días)."
+    },
+    {
+      "id": "ChatThreads",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": -1,
+      "description": "Hilos de chat y mensajería del sistema."
+    },
+    {
+      "id": "Incidentes",
+      "partitionKeyPath": "/usuarioId",
+      "defaultTimeToLive": -1,
+      "description": "Registro histórico de incidentes de colisión y reportes del sistema."
+    }
+  ]
+}
