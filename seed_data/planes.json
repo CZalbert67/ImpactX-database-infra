@@ -1,0 +1,32 @@
+[
+  {
+    "id": "plan-basico",
+    "nombre": "Básico",
+    "descripcion": "Protección personal estándar con detección de impacto y alerta a 1 contacto de emergencia.",
+    "precioMensual": 0.0,
+    "maxContactos": 1,
+    "permiteMonitores": false,
+    "telemetriaAvanzada": false,
+    "creadoEn": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "plan-pro",
+    "nombre": "Pro Conductor",
+    "descripcion": "Protección completa con telemetría en tiempo real, hasta 5 contactos y monitoreo familiar.",
+    "precioMensual": 9.99,
+    "maxContactos": 5,
+    "permiteMonitores": true,
+    "telemetriaAvanzada": true,
+    "creadoEn": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "plan-familiar",
+    "nombre": "Familiar Protect",
+    "descripcion": "Cobertura extendida para grupos familiares con tablero centralizado y geocercas activas.",
+    "precioMensual": 19.99,
+    "maxContactos": 10,
+    "permiteMonitores": true,
+    "telemetriaAvanzada": true,
+    "creadoEn": "2026-01-01T00:00:00Z"
+  }
+]
